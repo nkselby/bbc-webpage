@@ -1,0 +1,1224 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <meta http-equiv = "content-type" content=text/html; charset=Utf-8 />
+    <meta name="viewport" content="width=device-width, initial scale=1 /> 
+    <title> BBC </title>
+    <meta name="description" lang="en"/>
+
+    <style type= "text/css">
+	body{
+	   margin:0;
+	   font-family:arial,helvetica,sans-serif;
+	}
+
+	
+	#logodiv{
+          padding-top: 5px;
+	  float: left;
+	  border-right: 1px solid white;
+	  padding-right: 10px;
+          margin-left: 8%;
+        }
+      	#signindiv {
+	font-weight: bold;
+	font-size: 0.8em;
+        float: left;
+        padding-right: 100px;
+	color: white;
+	
+     }
+	#signindiv img{
+	 position: relative;
+         top: 5px;
+	 padding-left: 10px;
+	
+}
+    .navbar {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	line-height: 10px;
+	color: white; 
+
+
+}
+	.navbar a{
+	padding-right: 20px;
+	padding-left: 20px;
+	color: white;
+	font-weight:  bold;
+	font-size: 0.8em;
+	border-right: 1px solid grey;
+	line-height: 40px;
+}
+#searchdiv{
+float: right;
+padding-right: 10%;
+padding-top: 5px;
+border: none;
+padding-left: 8px;
+
+}
+
+#searchdiv input{
+height: 25px;
+border: none;
+font-size : 0.9em;
+font-weight: bold;
+padding-left: 7px;
+font-size: 0.9em;
+background-position: right center;
+background-image: url("images/search.png");
+background-repeat: no-repeat;
+}
+
+#newsarea{
+padding-top: 5px;
+padding-left: 8%;
+padding-right: 8%;
+}
+
+p{
+padding-top: 10px;
+padding-bottom: 2px;
+color: black;
+font-size: 25px;
+
+}
+
+p b{
+padding-right: 760px;
+font-size: 25px;
+}
+
+ .box{
+        position: relative;     
+     
+   }
+ .box img{
+ padding-right: 10px;
+ padding-bottom: 20px;
+padding-top: 10px;
+}
+
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 10px;
+        right: 0;
+        top: 90%; /* Adjust this value to move the positioned div up and down */
+        text-align: left;
+        width: 90%; /* Set the width of the positioned div */
+        color: white;
+      
+    }
+
+
+
+.column {
+  float: left
+  width: 30%;
+  padding: 10px;  
+  
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 30%;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.column b{
+font-size: 20px;
+}
+
+.column h5{
+border-left: 2px solid red;
+height: 15px;
+padding-left: 5px;
+}
+
+
+
+#news{
+font-size: 25px;
+padding-left: 10px;
+padding-bottom: 20px;
+}
+
+#news b{
+border-left: 5px solid red;
+height: 1px;
+padding-left: 5px;
+}
+
+#coronavirus{
+font-size: 25px;
+padding-left: 10px;
+padding-bottom: 10px;
+}
+
+#coronavirus b{
+border-left: 5px solid lightseagreen;
+height: 1px;
+padding-left: 5px;
+}
+
+#sport{
+font-size: 25px;
+padding-left: 10px;
+padding-bottom: 10px;
+}
+
+#sport b{
+border-left: 5px solid yellow;
+height: 1px;
+padding-left: 5px;
+}
+
+
+#reel{
+background-image: url("image 26.jpg");
+background-repeat: no-repeat center center fixed;
+background-size: cover;
+height: 480px;
+color: white;
+
+
+}
+
+
+#reel .text{
+padding-left: 8.5%;
+padding-top: 40px;
+padding-bottom: 10px;
+}
+
+#reel .text b{
+font-size: 45px;
+padding-right: 950px;
+}
+
+#reel .desc{
+font-size: 20px;
+}
+
+#africa{
+padding-left: 8%;
+padding-top: 20px;
+padding-right: 8%;
+}
+
+#africanews{
+font-size: 25px;
+padding-left: 8%;
+padding-top: 30px;
+
+}
+
+#africanews b{
+border-left: 5px solid red;
+height: 1px;
+padding-left: 5px;
+}
+
+#weather{
+padding-left: 8%;
+font-size: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
+}
+
+#weather img{
+margin-top: 25px;
+}
+
+#grey{
+background-color: #F2F3F4;
+height: 1250px;
+padding-left: 8%;
+padding-top: 30px;
+font-size: 25px;
+padding-right: 8%;
+}
+
+#editor b{
+border-left: 5px solid blue;
+height: 1px;
+padding-left: 5px;
+}
+
+ #grey .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 80%; /* Adjust this value to move the positioned div up and down */
+        text-align: left;
+        width: 90%; /* Set the width of the positioned div */
+        color: white;
+        font-size: 15px;
+      
+    }
+
+#grey .box .text b{
+font-size: 30px;
+
+}
+ # .box{
+padding-top: 10px;
+
+}
+
+#grey .td{
+ float: left;
+  width: 100%;
+  padding-right: 10px;
+  flex: 30%;
+  font-size: 17px;
+
+  
+}
+
+#grey .lf{
+ display: flex;
+ width: 65%;
+ font-size: 20px;
+ padding: 10px;
+
+}
+
+grey .lf::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+.td h5{
+border-left: 2px solid lightseagreen;
+height: 15px;
+padding-left: 5px;
+}
+
+#food{
+padding-left: 8%;
+padding-right: 8%;
+padding-bottom: 30px;
+}
+
+#food .follow{
+padding-left: 10px;
+padding-top: 30px;
+font-size: 25px;
+font-weight: bold;
+}
+
+#food .follow b{
+padding-right: 390px;
+}
+
+#food b{
+font-size: 25px;
+}
+
+#video{
+background-color: #F2F3F4;
+height: 1100px;
+padding-left: 8%;
+}
+
+#video #feature{
+padding-top: 30px;
+font-size: 25px;
+padding-bottom: 10px;
+}
+
+#feature b{
+border-left: 4px solid blue;
+height: 5px;
+padding-left: 5px;
+
+}
+
+
+
+#bbc{
+padding-left: 8%;
+padding-right: 8%;
+padding-bottom: 30px;
+padding-top: 30px;
+}
+
+
+#technology{
+padding-left: 8%;
+padding-right: 8%;
+padding-top: 30px;
+}
+
+#technology b{
+font-size: 25px;
+padding-bottom: 20px;
+
+}
+#world{
+background-color: #F2F3F4;
+height: 1150px;
+padding-left: 8%;
+padding-right:8%;
+padding-bottom: 30px;
+}
+#grey #newspane img{
+float: right;
+}
+
+#world #newspane img{
+float: left;
+padding-top: 20px;
+padding-right: 10px;
+}
+
+
+#world #more{
+font-size: 25px;
+padding-top: 30px;
+}
+
+#world #more b{
+border-left: 4px solid blue;
+height: 5px;
+padding-left: 5px;
+}
+
+#world .td{
+ float: left;
+  width: 100%;
+  padding-right: 10px;
+  flex: 30%;
+  font-size: 17px;
+
+  
+}
+
+#world .lf{
+ display: flex;
+ width: 65%;
+ font-size: 20px;
+ padding: 10px;
+float: right;
+
+}
+
+world .lf::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+
+#pics {
+background-color: #F2F3F4;
+height: 900px;
+}
+
+#pics #wip{
+padding-top: 30px;
+padding-left: 8%;
+
+
+}
+
+#pics #itext{
+padding-left: 8%;
+padding-right: 8%;
+padding-top: 10px;
+}
+#pics #itext .responsive{
+padding-right: 20px;
+}
+#pics #wip b{
+font-size: 25px;
+border-left: 4px solid blue;
+height: 5px;
+padding-left: 5px;
+}
+#pics{
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+
+#languages{
+height: 400px;
+background-color: lightgrey;
+padding-left: 8%;
+padding-right: 8%;
+} 
+
+#languages #ol{
+font-size: 25px;
+padding-top: 30px;
+padding-bottom: 20px;
+}
+
+
+
+#bar{
+background-color: white;
+height: 10px;
+}
+
+
+
+
+ .container {
+  position: relative;
+  float: left;
+  padding-right: 20px;
+ 
+}
+
+ .container .bottomleft {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: white;
+  
+}
+
+ 
+
+div.gallery {
+  border: 1px solid #ccc;
+  background-color: white;
+  width: 100%;
+  float: left;
+  flex: 30%;
+}
+
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+
+}
+
+div.desc {
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+ .responsive {
+  padding-right: 6px;
+  padding-bottom: 6px;
+  float: left;
+  width: 20%;
+  display: flex;
+color: black;
+padding-top: 10px;
+}
+
+
+.responsive {
+  display: flex;
+}
+
+.responsive:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+#news{
+font-size: 25px;
+padding-left: 10px;
+padding-bottom: 20px;
+}
+
+
+#reel .responsive{
+width: 30%;
+padding-right: 20px;
+}
+
+#technology {
+padding-left: 8%;
+font-weight: bold;
+font-size: 25px;
+
+}
+
+#technology b{
+padding-right: 265px;
+}
+
+#technology #itext{
+padding-right: 20px;
+padding-bottom: 30px;
+padding-top: 10px;
+}
+
+#technology{
+background-color: white;
+height: 460px;
+}
+
+
+#itext .responsive {
+  padding-right: 6px;
+  padding-bottom: 6px;
+  float: left;
+  width: 32%;
+  display: flex;
+  color: black;
+  padding-top: 10px;
+  height: 400px;
+}
+#itext .gallery img {
+  width: 100%;
+  height: 260px;
+
+
+}
+#itext .reponsive b{
+font-size: 20px;
+}
+
+.responsive .gallery h5{
+padding-bottom: 10px;
+padding-left: 20px;
+padding-left: 7px;
+border-left: 2px solid lightseagreen;
+height: 10px;
+}
+
+.gallery #ft{
+padding-left: 10px;
+
+}
+
+#newsarea #itext .container{
+padding-bottom: 20px;
+width: 50%;
+}
+
+#newsarea .container .bottomleft {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: white;
+  
+}
+
+
+#newsarea .bottomleft b{
+font-size: 25px;
+}
+
+#world .bottomleft b{
+font-size: 25px;
+}
+
+#world .bottomleft {
+font-size: 15px;
+width: 800px;
+}
+
+#footer {
+height: 260px;
+background-color: #424242;
+color: white;
+padding-left: 8%;
+padding-right: 9%;
+font-size: 13px;
+}
+
+#footer .explore{
+font-size: 23px;
+padding-top: 25px;
+padding-bottom: 15px;
+}
+
+#footer .hf b{
+line-height: 2.6;
+padding-right: 140px;
+
+
+
+}
+
+#footer .hf {
+  column-count: 6;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  padding-bottom: 10px;
+}
+
+#footer  #space{
+line-height: 2.6;
+padding-bottom: 10px;
+}
+
+
+
+
+#languages #difflang #a{
+width: 120px;
+float: left
+}
+
+#languages #difflang #b{
+width: 120px;
+float: left
+}
+
+#languages #difflang #c{
+width: 120px;
+float: left
+}
+
+#languages #difflang #d{
+width: 170px;
+float: left
+}
+
+#languages #difflang #e{
+width: 170px;
+float: left
+}
+
+#languages #difflang #f{
+width: 170px;
+float: left
+}
+
+#languages #difflang #g{
+width: 170px;
+float: left
+}
+
+
+
+
+</style>
+
+  </head>
+  <body> 
+    <div>
+ 	    <div id = "logodiv" >
+		<img src = "images/Capture.png"/>
+	    </div>
+
+	<div id= "signindiv">
+	  <img src = "images/signin.png"/> Sign In
+	 </div>
+<div class="navbar">
+      <a rel="#home">Home</a>
+      <a rel="#news">News</a>
+      <a rel="#Sports">Sports</a>
+      <a rel"#Reel">Reel</a>
+      <a rel="worklife#">Worklife</a>
+      <a rel="travel#">Future</a>
+      <a rel="culture#">Culture</a>
+      <a rel="More#">More</a>
+
+
+<div id = "searchdiv" >
+ <input text = "text" placeholder = "Search" />
+</div>
+</div>
+
+<div id= "newsarea">
+<p><b><font size="5"> Welcome to BBC.com </font></b> Wednesday, 1st April </p> 
+
+<div id="itext">
+<div class="container">
+  <img src="image 74.jpg" alt="Cinque Terre" width="600" height="350">
+  <div class="bottomleft"> <b> Trump's WHO defunding 'as dangerous as it sounds' </b> </br> Bill Gates, a major donor to the global health agency, is among critics of Donald Trump's funding cut <h5> US & CANADA </h5></div>
+</div>
+<div class="container">
+  <img src="image 76.jpg" alt="Cinque Terre" width="600" height="350">
+  <div class="bottomleft"> <b> Veteran Congolese musician dies </b> </br>Congolese musician Kasongo wa kanema dies <h5> AFRICA </h5></div>
+</div>
+
+
+
+</div>
+
+<div id= "news"> <b> News</b> </div>
+
+<div class="row">
+  <div class="column">
+    <img src="image12.jpg" alt="Snow" style="width:100%">
+  <b> India 'to extend' national corona virus due to coronavirus lockdown</b> </br> Delhi's chief minister says Narendra Modi has agreed to extend the measure, due to end Tuesday.
+<h5> UK POLITICS </h5>
+</div>
+  <div class="column">
+    <img src="image 13.jpg" alt="Forest" style="width:100%">
+  <b> UK told to stay home despite sun after record deaths</b> </br>Renewed plea comes after death toll exceeds the worst daily figures seen in Italy and Spain.
+<h5> US & CANADA </h5>
+</div>
+  <div class="column">
+    <img src="image 14.jpg" alt="Mountains" style="width:100%"> 
+  <b> 'Like 9/11 everyday': A New york paramedic's dairy</b> </br>New York City paramedic Anthony Almojera details 24 hours in the world's coronavirus hotspot.
+ <h5> EUROPE </h5> 
+ </div>
+
+</div>
+<div id= "sport"> <b>Sport</b> </div>
+
+<div class="row">
+  <div class="column">
+    <img src="image 15.jpg" alt="Snow" style="width:100%"> 
+  <b> Aubameyang should join 'more ambitious club' </b> </br> Arsenal's Pierre-Emerick Aubameyang needs to "secure a contract with a more ambitious club," according to the preisdent of the Gabon Football Association. 
+<h5> FOOTBALL </h5>
+</div>
+  <div class="column">
+    <img src="image 16.jpg" alt="Forest" style="width:100%"> 
+  <b> The month that changed the Premier League </b></br> On 11 March, Manchester City's clash with Arsenal became the first Premier League match to be postponed because of the corona virus pandemic - this is what has happened.
+<h5> FORMULA 1 </h5>
+</div>
+<div class="column">
+    <img src="image 17.jpg" alt="Mountains" style="width:100%">
+  <b>Bundesliga could restart in may </b></br> Eintracht Frankfurt midfieldr Gelson fernandes says players "feel lucky" to be back in training and thinks the German football league will be back under way in May. 
+<h5> FOOTBALL </h5>
+</div>
+
+</div>
+
+<div id= "coronavirus"> <b>Coronavirus pandemic</b> </div>
+
+<div class="row">
+  <div class="column">
+    <img src="image 18.jpg" alt="Snow" style="width:100%"> 
+  <b> Why this symbol is sweeping the world </b> </br> How rainbows have appeared in windows across the globe.  
+ <h5> CULTURE </h5>
+ </div>
+  <div class="column">
+    <img src="image 19.jpg" alt="Forest" style="width:100%"> 
+  <b> Which countries will recover first from covid-19 </b></br> Five nations likely to maintain stability throughout the crisis.
+ <h5> WORKLIFE </h5> 
+</div>
+  <div class="column">
+    <img src="image19.jpg" alt="Mountains" style="width:100%">
+  <b> Can you boost your immune system? </b></br> Forget kombucha and trendy vitamin supplements. 
+<h5> FUTURE </h5>
+</div>
+
+
+</div>
+</div>
+<div id="weather"> <b> LAGOS WEAHTER </b> <img src = "image 37.png"/> 
+<div> <img src = "image 36.png"/> </div>
+</div>
+
+
+
+<div id="reel">
+<div class="text"><b> REEL </b> <img src = "image 31.png"/>
+</br>   
+ <div>The most amazing videos from BBC</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="image 30.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Quarantined village 'turned into human laboratory'  
+ </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="image 28.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"> The surprisingly dark world of having free will 
+  </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="image 29.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">  The world's fastest sinking city </div>
+  </div>
+</div>
+</div>
+ 
+
+
+</div>
+</div>
+<div id= "africanews"> <b> Africa News</b> </div>
+
+<div id="africa">
+<div class="row">
+  <div class="column">
+    <img src="image 35.jpg" alt="Snow" style="width:100%">
+  <b> Push-ups to fake guests: Curious African coronavirus moments</b> </br>Free buses, a mock wedding, hands-free taps and round-robin poetry are part of life under lockdown.
+  <h5> AFRICA </h5>
+</div>
+  <div class="column">
+    <img src="image 32.jpg" alt="Forest" style="width:100%">
+  <b> South Africa's lockdown extension condemned</b> </br>Extending restrictions until the end of April will create an economic disaster, the opposition says.
+<h5> AFRICA </h5>
+</div>
+  <div class="column">
+    <img src="image 33.jpg" alt="Mountains" style="width:100%"> 
+  <b> Hopes dashed in DR Congo as new Ebola case reported</b> </br> The country had been preparing to declare the two-year outbreak over on Sunday.
+<h5> AFRICA </h5>
+ </div>
+ <div class="column">
+    <img src="image 34.jpg" alt="Mountains" style="width:100%"> 
+  <b> 'Like 9/11 everyday': Africa's top shots: Minion-clad vendors and Casablanca cats</b> </br>
+<h5> AFRICA </h5>
+</div>
+</div>
+</div>
+
+<div id="grey">
+<div id="editor">
+<b> Editor's Picks</b>
+</div>
+
+
+<div id="newspane">
+<img src="image 50.png" alt="Flying Kites" style= "width:30%">
+
+</div>
+
+<div class="box">
+        <img src="image 72.jpg" alt="Flying Kites" style= "width:65%">
+        <div class="text">
+            <b>The world's most stunning interiors </b> </br> The most iconic interiors of the past 100 years
+        </div>
+
+</div>
+
+<div class="lf">
+  <div class="td">
+    <img src="image 43.jpg" alt="Snow" style="width:100%">
+  <b> What we learn from kind nations</b> </br>Four countries with traditions of generosity and compassiion.
+  <h5> AFRICA </h5>
+</div>
+  <div class="td">
+    <img src="image 44.jpg" alt="Forest" style="width:100%">
+  <b> Seven thrilling drama podcasts to download</b> </br> Some audio drama will most certainly transport you to another world.
+<h5> AFRICA </h5>
+</div>
+  <div class="td">
+    <img src="image 45.jpg" alt="Mountains" style="width:100%"> 
+  <b> Why does trump want to mine on the moon</b> </br> The US president signed an order saying America had a right to use resources in space.
+<h5> AFRICA </h5>
+ </div>
+ </div>
+
+<div class="lf">
+  <div class="td">
+    <img src="image 40.jpg" alt="Snow" style="width:100%">
+  <b> Fifty years of bold predictions about remote work</b> </br>Technology was never limit to people working from home
+  <h5> WORKLIFE </h5>
+</div>
+  <div class="td">
+    <img src="image 46.jpg" alt="Forest" style="width:100%">
+  <b> The world's toughest coral reefs</b> </br> In the north of the Red sea there is a ray of hope.
+<h5> FUTURE </h5>
+</div>
+  <div class="td">
+    <img src="image 42.jpg" alt="Mountains" style="width:100%"> 
+  <b> How to mine precious metals hidden in your home</b> </br> The ground is not the only source of rare and valuable metals .
+<h5> AFRICA </h5>
+ </div>
+ 
+</div>
+
+ 
+</div>
+</div>
+  
+<div id="food">
+<div class= " follow"> <b>FOLLOW THE FOOD </b> DESIGN </div>
+
+<div class="row">
+  <div class="column">
+    <img src="image 47.jpg" alt="Snow" style="width:100%">  
+  <h5> FUTURE </h5>
+<b> The green sludge that could transform our diet</b> 
+</div>
+  <div class="column">
+    <img src="image 48.jpg" alt="Forest" style="width:100%">
+<h5> CULTURE </h5>
+<b> Poland's extraordinary churches</b> 
+</div>
+ 
+ 
+</div>
+</div>
+
+
+<div id="video">
+<div id="feature"> <b> featured video </b> </div>
+<img src="image 58.png" alt="Flying Kites" style= "width:90%">
+<img src="image 59.png" alt="Flying Kites" style= "width:90%">
+
+
+
+</div>
+
+
+<div id="bbc"> <img src="image 49.png" alt="Forest" style="width:100%"> </div>
+
+
+<div id="world">
+<div id="more"> <b>More from around the BBC </b> </div>
+<div id="newspane">
+<img src="image 51.png" alt="Flying Kites" style= "width:35%">
+
+
+</div>
+<div id="itext">
+
+<div class="container">
+  <img src="image 73.jpg" alt="Cinque Terre" style ="width:160%; height: 500px;" >
+  <div class="bottomleft"> <b> Opposite-sex marriages fall to record low </b></br> The number of ceremonies in which men and women wed each other has been falling since the 1970s </div>
+</div>
+</div>
+<div class="lf">
+  <div class="td">
+    <img src="image 64.jpg" alt="Snow" style="width:100%">
+  <b> How Drake harnessed tiktok to slide to number one</b> </br>
+  <h5> ENTERTAINMENT & ARTS </h5>
+</div>
+  <div class="td">
+    <img src="image 65.jpg" alt="Forest" style="width:100%">
+  <b> Blue skies pushed Greenland 'into the red' </b> </br> 
+<h5> SCIENCE & ENVIRONMENT </h5>
+</div>
+  <div class="td">
+    <img src="image 66.jpg" alt="Mountains" style="width:100%"> 
+  <b> How to sell snacks when no one is going the office</b> </br> 
+<h5> BUSINESS </h5>
+ </div>
+ </div>
+
+<div class="lf">
+  <div class="td">
+    <img src="image 67.jpg" alt="Snow" style="width:100%">
+  <b> US to halt funding to the WHO over coronavirus</b> 
+  <h5> US & CANADA </h5>
+</div>
+  <div class="td">
+    <img src="image 68.jpg" alt="Forest" style="width:100%">
+  <b> Fortnite delays release of new season</b> </br> 
+<h5> TECHNOLOGY </h5>
+</div>
+  <div class="td">
+    <img src="image 69.jpg" alt="Mountains" style="width:100%"> 
+  <b> Analysis: How do we get out of lockdown?</b> </br> 
+<h5> HEALTH </h5>
+ </div>
+ 
+</div>
+</div>
+
+<div id="technology"><b> TECHNOLOGY OF BUSINESS </b> DESIGNED
+<div id="itext">
+<div class="container">
+  <img src="image 63.jpg" alt="Cinque Terre" width="600" height="350">
+  <div class="bottomleft"> <b> Why computer games are more than a lockdown distraction </b> </div>
+</div>
+<div class="container">
+  <img src="image 62.jpg" alt="Cinque Terre" width="600" height="350">
+  <div class="bottomleft"> <b> Should we teach our children about quantum computing?</b> </div>
+</div>
+</div>
+
+
+</div>
+
+
+
+<div id="pics">
+<div id="wip"> <b> World in pictures</b></div>
+<div id="itext">
+<div class="container">
+  <img src="image 60.jpg" alt="Cinque Terre" width="600" height="350">
+  <div class="bottomleft"> <b> In pictures: Isolation portraits over the internet </b></div>
+</div>
+<div class="container">
+  <img src="image 61.jpg" alt="Cinque Terre" width="600" height="350">
+  <div class="bottomleft"> <b> Enhanced images reveal life on stricken spacecraft</b></div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="image 53.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"> <b> Your pictures on the theme of 'insects' </b> 
+ </div>
+<div id="ft"><h5> IN PICTURE </h5></div>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="image 54.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"> <b>Striking new pictures from around the world </b>
+ </div>
+<div id="ft"><h5> IN PICTURE </h5></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="image 55.jpg" alt="Mountains" width="600" height="400">
+    </a>
+   
+ <div class="desc"> <b> Easter celebrations continue under global lockdown </b>
+ </div>
+<div id="ft"><h5> IN WORLD </h5></div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="languages">
+
+<div id="ol"><b> BBC IN OTHER LANGUAGES </b></ol></div>
+<div id="difflang"> 
+<div id="a"> 
+<b>Hausa</b></br>
+Dakunan ajiyar gawarwaki sun cika makil a Ghana saboda coronavirus
+</div>
+
+<div id="a">  
+<b>Arabic</b></br>
+ترامب: الولايات المتحدة "تجاوزت ذروة" تفشي وباء كورونارامب:رامب:
+</div>
+
+<div id="b"> 
+<b>Swahili</b></br>
+Trump asema Marekani ‘imefikia kilele cha maambukizi’ ya Corona ya Corona
+</div>
+
+<div id="c">  
+<b>Somali</b></br>
+Shacabka UK oo loo ogolaan doono in ay "sagootiyaan" eheladooda la il-daran 
+</div>
+
+<div id="d">  
+<b>More Languages</b></br>
+
+Arabic عربيAzeri AZƏRBAYCANBangla বাংলাBurmese မြန်မာChinese 中文网French AFRIQUEHausa HAUSAHindi हिन्दीIndonesian
+</div>
+
+<div id="e">   
+INDONESIAJapanese 日本語Kinyarwanda GAHUZAKirundi KIRUNDIKyrgyz КыргызMarathi मराठीNepali नेपालीPashto پښتوPersian 
+</div>
+
+<div id="f">  
+فارسیPortuguese BRASILRussian НА РУССКОМSinhala සිංහලSomali SOMALISpanish MUNDOSwahili SWAHILITamil 
+</div>
+
+<div id="g">  
+தமிழ்Turkish TÜRKÇEUkrainian УКРАЇНСЬКAUrdu اردوUzbek O'ZBEKVietnamese TIẾNG VIỆT
+</div>
+
+
+
+</div>
+
+
+</div>
+<div id="footer">
+<div class="explore"><b> Explore the bbc </b></div>
+<div class="hf"> 
+
+<b>Home</b>
+<b>News</b>
+<b>Sports</b>
+<b>Reel</b>
+<b>Worklife</b>
+<b>Travel</b>
+<b>Future</b>
+<b>Culture</b>
+<b>Music</b>
+<b>TV</b>
+<b>Weather</b>
+<b>Sounds</b>
+</div>
+<hr>
+
+<div id="space">
+Terms of use &nbsp;&nbsp;
+About the BBC &nbsp;&nbsp;
+Privacy Policy &nbsp;&nbsp;
+Cookies &nbsp;&nbsp;
+Accessibility Help &nbsp;&nbsp;
+Parental guidance &nbsp;&nbsp;
+Contact the BBC &nbsp;&nbsp;
+Get Personalised Newsletters &nbsp;&nbsp;
+Advertise with Us &nbsp;&nbsp; </br>
+AdChoices / Do Not Sell My Info &nbsp;&nbsp; </br>
+
+<b> Copyright 2020 BBC.</b> The BBC is not responsible for the content of external site. <b>Read our approach to external linking.</b>
+
+
+</div>
+
+</div>
+
+<div id="bar"> </div>	
+
+
+
+
+
+</body> 
+
+
